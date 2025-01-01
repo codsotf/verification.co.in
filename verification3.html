@@ -46,7 +46,7 @@
                 <p>CERTIFICATE VERIFICATION SYSTEM<p>
                 <div class="search">
                     <input type="text" placeholder="Enter Certificate Code" id="input">
-                    <button>Search</button>
+                    <button id="search">Search</button>
                 </div>
             </div>
 
@@ -113,11 +113,11 @@
     document.querySelector("#search").addEventListener('click',()=>{
         let val=inputvalue.value;
         if(val=="b8c359d"){
-            window.location.href = 'http://127.0.0.1:5500/verification2.html';
+            window.location.href = './verification2.html';
         }
 
         else if(val=='abf1c39'){
-            window.location.href = 'http://127.0.0.1:5500/verification3.html';
+            window.location.href = './verification3.html';
         }
         else{
             alert("invalid code id");
