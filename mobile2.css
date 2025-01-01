@@ -1,0 +1,129 @@
+*{
+    margin: 0px;
+    padding-left: 0px;
+    box-sizing: border-box;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 6.5vw;
+    padding-right: 6.5vw;
+    padding: 7vw;
+}
+
+.first>img{
+    height: 9vh;
+}
+.second{
+    display: none;
+}
+
+.hamberger{
+    padding: 3vh;
+    background-color: #fafafa;
+    margin-left: 2vw;
+}
+
+#hamburger{
+    height: 3vh;
+}
+
+
+/* body css */
+
+.main{
+    padding-top: 18vh;
+    padding-left: 7vw;
+    padding-right: 7vw;
+}
+
+.verify>p{
+    font-size: 20px;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.search{
+    margin-top: 10vh;
+    background-color: #f4f5fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:8vw;
+
+    padding-bottom: 8vw;
+    /* padding-left: 8vw; */
+    /* padding-right: 8vw; */
+    border-radius: 10px;
+    border: 3px solid #ebedfa;
+    /* width: calc(0px+10vw+10vw); */
+    width: 270px;
+    margin-left: 5cqw;
+
+}
+
+#input{
+    width: 205px;
+    height: 47px;
+    padding-left: 6vw;
+    font-size: 16px;
+    border: 1px solid black;
+    font-family: inter, sans-serif;
+}
+
+.search>button{
+    width: 205px;
+    height: 47px;
+    background-color: black;
+    color: white;
+}
+
+
+/* result css */
+.result{
+    margin-top: 10vh;
+    
+}
+
+.result>h1{
+    text-align: center;
+}
+
+.info{
+    margin-left: 10vw;
+    margin-top: 3.5vh;
+
+    
+}
+
+.white, .grey{
+    padding: 2vh;
+    border: 1px solid black;
+    border-radius: 3px;
+    
+}
+
+.grey{
+    background-color: #f0f0f0;
+}
+
+
+
+
+
+/* footer css */
+.foot{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 23vh;
+    margin-bottom: 10vh;
+    font-size: 15px;
+    font-family:  -apple-system,system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.foot>a{
+    color: #4f70aa;
+}

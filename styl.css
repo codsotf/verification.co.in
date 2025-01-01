@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    line-height: 1.6;
+}
+
+/* General Styles */
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    height: auto;
+}
+
+.first > img {
+    height: 12vh;
+}
+
+.second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+button {
+    font-size: 16px;
+    background-color: white;
+    color: #1b7496;
+    border: none;
+    padding: 8px;
+    border-bottom: 2px solid white;
+}
+
+button:hover {
+    cursor: pointer;
+    border-bottom: 2px solid #7d5656;
+    color: #7d5656;
+}
+
+select {
+    font-size: 16px;
+    width: 100%;
+    margin: 5px 0;
+}
+
+/* Main Section */
+.main {
+    height: auto;
+    padding-top: 20px;
+    background-image: url(./background.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.verify {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    margin-top: 5vh;
+    text-align: center;
+}
+
+.verify > h3 {
+    font-size: 22px;
+}
+
+.verify > img {
+    width: 50px;
+    height: 50px;
+}
+
+.verify > button {
+    font-size: 16px;
+    color: white;
+    background-color: #61c256;
+    width: 85%;
+    padding: 12px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+}
+
+/* Footer */
+.foot {
+    height: auto;
+    background-color: #ebeadf;
+    padding: 5vh 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.useful > strong, .legal > strong {
+    font-size: 20px;
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 15px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.contact > input {
+    height: 40px;
+    width: 90%;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contact > button {
+    height: 40px;
+    width: 90%;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+/* Media Queries for Smartphones */
+
+/* Small Phones (max-width: 320px) */
+@media screen and (max-width: 320px) {
+    .head {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .first > img {
+        height: 10vh;
+    }
+
+    .second {
+        width: 95%;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    .verify > h3 {
+        font-size: 18px;
+    }
+
+    .contact > input {
+        height: 35px;
+    }
+
+    .contact > button {
+        height: 35px;
+    }
+}
+
+/* Medium Phones (max-width: 375px) */
+@media screen and (max-width: 375px) {
+    .head {
+        padding: 0.5rem;
+    }
+
+    .first > img {
+        height: 11vh;
+    }
+
+    button {
+        font-size: 15px;
+    }
+
+    .verify > h3 {
+        font-size: 20px;
+    }
+
+    .contact > input {
+        font-size: 13px;
+    }
+}
+
+/* Large Phones (max-width: 425px) */
+@media screen and (max-width: 425px) {
+    .first > img {
+        height: 12vh;
+    }
+
+    .verify > button {
+        font-size: 17px;
+    }
+
+    .contact > button {
+        font-size: 15px;
+    }
+}
+
+/* Extra-Large Phones (max-width: 600px) */
+@media screen and (max-width: 600px) {
+    .head {
+        justify-content: space-between;
+    }
+
+    .first > img {
+        height: 13vh;
+    }
+
+    .second {
+        width: 90%;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    .verify > h3 {
+        font-size: 22px;
+    }
+
+    .contact > input, .contact > button {
+        font-size: 14px;
+    }
+}

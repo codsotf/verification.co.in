@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Verification</title>
+    <link rel="icon" href="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=48,h=48,fit=crop,f=png/Aq20eV79zLfpXV6b/1685789339697-YrDL60zzRBfzM6Wr.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./mobile2.css">
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="first">
+                <img src="./codesoft_logo.png" alt="">
+            </div>
+            <div class="second">
+                
+                <button>Services</button>
+                
+                <!-- <select name="WebD" id="Web">
+                    <option value="">Services</option>
+                    <option value="">Web Development</option>
+                    <option value="">Mobile App Development</option>
+                </select> -->
+                
+                <button>Internship</button>
+                <button>Jobs</button>
+                <!-- <select name="WebD" id="Web">
+                    <option value="">Jobs</option>
+                    <option value="">Campus Ambassador</option>
+                    <option value="">Promotion Executive</option>
+                </select> -->
+                <button>Verification</button>
+                <button>About Us</button>
+                <button>Contact Us</button>
+            </div>
+
+            <div class="hamberger">
+                <img src="./hamburger(1).png" alt="" id="hamburger">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <div class="verify">
+                <p>CERTIFICATE VERIFICATION SYSTEM<p>
+                <div class="search">
+                    <input type="text" placeholder="Enter Certificate Code" id="input">
+                    <button>Search</button>
+                </div>
+            </div>
+
+            <div class="result">
+                <h1>Certificate Result</h1>
+                <div class="info">
+                    <div class="white">
+                        <p>Student Name: Ashish Singh Airy </p>
+                    </div>
+                    <div class="grey">
+                        <p>Domain: Web Development </p>
+                    </div>
+                    <div class="white">
+                        <p>Duration: 4 Weeks</p>
+                    </div>
+                    <div class="grey">
+                        <p>Cirtificate No.: abf1c39</p>
+                    </div>
+                    <div class="white">
+                        <p>Starting Date: 05/Jul/2024</p>
+                    </div>
+                    <div class="grey">
+                        <p>Award Date: 05/Aug/2024</p>
+                    </div>
+                </div>
+<!-- 
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><p>Student Name: Anuz Uniyaal</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>Domain: Web Development</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>Duration: 4 Weeks</p></td>
+                        </tr>
+                        <tr>
+                            <td> <p>Cirtificate No.: b8c359d</p></td>
+                        </tr>
+                        <tr>
+                            <p>Starting Date: 10/Jul/2024</p>
+                        </tr>
+                        <tr>
+                            <td><p>Award Date: 10/Aug/2024</p></td>
+                        </tr>
+                    </tbody>
+                </table> -->
+            </div>
+        </div>
+    </main>
+    <footer>
+
+        <div class="foot">
+            <p>&copy;2024. Build with</p>
+            <a href="">CodSoft</a>
+        </div>
+    </footer>
+</body>
+
+<script>
+    const inputvalue=document.querySelector("#input");
+
+    document.querySelector("#search").addEventListener('click',()=>{
+        let val=inputvalue.value;
+        if(val=="b8c359d"){
+            window.location.href = 'http://127.0.0.1:5500/verification2.html';
+        }
+
+        else if(val=='abf1c39'){
+            window.location.href = 'http://127.0.0.1:5500/verification3.html';
+        }
+        else{
+            alert("invalid code id");
+        }
+    });
+</script>
+
+</html>

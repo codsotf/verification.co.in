@@ -1,0 +1,414 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border;
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly ;
+    padding-top: 6px;
+    padding-bottom: 5px;
+    padding-left: 2.8rem;
+    height: 96px;
+    /* background-color: green; */
+
+
+}
+
+.first>img{
+    height: 11.6vh;
+}
+
+.second{
+    /* background-color: red; */
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 52vw;
+
+    
+
+}
+
+#hamburger{
+    display: none;
+}
+button{
+    font-size: 18px;
+    font-family: Inter,sans-serif;
+    background-color: white;
+    color: #1b7496;
+    border: none;
+    /* margin-right: 9px; */
+    width: fit-content;
+    padding: 3px;
+    border-bottom: 2px solid white; 
+    padding-bottom: 5px;
+
+}
+
+button:hover{
+    cursor: pointer;
+    border-bottom: 2px solid #7d5656; 
+   
+    /* text-decoration: underline; */
+    /* padding-bottom: 10px; */
+    color: #7d5656;
+}
+
+select{
+    font-size: 18px;
+    background-color: white;
+    color:#1b7496 ;
+    border: none;
+    margin-right: 14px;
+    width: 7rem;
+}
+
+
+/* main part of css */
+
+.main{
+    height: 465px;
+    padding-top: 20px;
+    background-image: url(./background.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.verify{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 28vh;
+
+    
+}
+
+.verify>h3{
+    font-family: Inter,sans-serif;
+    font-size: 36px;
+}
+
+.verify>img{
+    width: 58px;
+    height: 58.75px;
+}
+
+.verify>button{
+    font-family: Noto Sans;
+    font-size: 19px;
+    color: white;
+    background-color: #61c256;
+    width: 275px;
+    height: 61px;
+    font-weight: bolder;
+    border:none;
+    border-radius: 20px;
+}
+
+/* footer part of webpage */
+
+.foot{
+    height: 580px;
+    background-color: #ebeadf;
+    padding-left: 10vw;
+    padding-right: 14vw;
+    padding-top: 5.5vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links{
+    display: flex;
+    width: 29vw;
+    justify-content: space-between;
+}
+
+.useful>strong, .legal>strong{
+    font-family: Noto Sans;
+    font-size: 25px;
+}
+
+.useful>ul>p, .legal>ul>p{
+    font-family: Inter, sans-serif;
+    font-size: 25px;
+    /* margin-bottom: 15px; */
+    
+}
+
+ul{
+    padding-left: 2vw;
+    padding-top: 2vw;
+    
+    
+}
+li{
+    margin-bottom: 19px;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    /* margin-right: 2vw; */
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 38vh;
+    width: 24.6vw;
+}
+
+.contact>strong{
+    font-family: Noto Sans;
+    font-size: 25px;
+    text-align: center;
+}
+
+.p{
+    font-size: 20px;
+    font-family: Inter, sans-serif;
+}
+
+.contact>a>p{
+    font-size: 18px;
+    font-family: Inter, sans-serif;
+    font-weight: bold;
+    color: black;
+    text-decoration-line: none;
+}
+
+.contact>span{
+    font-size: 20px;
+    font-family: Inter, sans-serif;
+}
+
+.contact>input{
+    height: 6vh;
+    width: 22.5vw;
+    border: none;
+    background-color: white;
+    padding-left: 10px;
+    color: grey;
+    font-size: 15px;
+    font-family: Inter, sans-serif;
+}
+
+.contact>button{
+    height: 7vh;
+    width: 15vw;
+    background-color: black;
+    color: white;
+    /* padding-left: 10px; */
+    border-radius: 30px;
+    text-align: center;
+    font-size: 14px;
+    margin-left: 3vw;
+}
+
+
+
+
+
+/* css for phone */
+@media (max-width=360px) {
+
+
+    *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    
+    .head{
+        display: flex;
+        align-items: center;
+        padding: 6.7vw;
+    }
+    
+    .first>img{
+        height: 10vh;
+    }
+    
+    .second{
+        display: none;
+    }
+    
+    .hamberger{
+        margin-left: 60px;
+    }
+    
+    
+    #hamburger{
+        height: 4.5vh;
+    }
+    
+    /* main css */
+    
+    .main{
+        height: 685px;
+        background-image: url(./background.avif);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        padding-top: 20vh;
+        padding-right: 18vw;
+        padding-left: 9vw;
+    }
+    
+    .verify{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    
+    .verify>h3{
+        font-size: 23px;
+        text-align: center;
+        margin-bottom: 5vh;
+    }
+    
+    .verify>img{
+        height: 8vh;
+        width: 8vh;
+        margin-bottom: 5vh;
+    
+    }
+    
+    .verify>button{
+        width: 177px;
+        height: 68px;
+        border-radius: 20px;
+        border: none;
+        color: white;
+        background-color: #61c256;
+        font-weight: bold;
+    }
+    
+    
+    /* footer css */
+    
+    .foot{
+        padding-top: 5vh;
+        background-color: #ebeadf;
+        padding-left: 4.5vw;
+        padding-right: 2vw;
+        height: 128vh;
+    }
+    
+    .links{
+        display: flex;
+        justify-content: space-evenly;
+        /* width: ; */
+    
+    }
+    
+    .useful>strong, .legal>strong{
+        font-size: 20px;
+        /* margin-bottom: 6vh; */
+    }
+    
+    li{
+        margin-top: 3vh;
+        font-size: 12px;
+        margin-left: 5vw;
+        font-family: inter, sans-serif;
+    }
+    
+    .contact{
+        margin-top: 7vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 48vh;
+    }
+    
+    
+    .contact>strong{
+        font-family: Noto Sans;
+        font-size: 20px;
+    }
+    
+    .p{
+        font-family:inter, sans-serif ;
+        font-size: 16px;
+        width: 60vw;
+    }
+    
+    .contact>a{
+        font-family:inter, sans-serif ;
+        font-size: 16px;
+        font-weight: bold;
+        color: black;
+        
+    
+    }
+    
+    .contact>span{
+        font-family:inter, sans-serif ;
+        font-size: 16px;
+    }
+    
+    .contact>input{
+        width: 300px;
+        height: 43px;
+        padding: 10px;
+        border: none;
+    }
+    
+    .contact>button{
+        width: 230px;
+        height:40px;
+        background-color: black;
+        color: white;
+        font-size: 16px;
+        border-radius: 22px;
+        margin-left: 10vw;
+    }
+    
+    .follow{
+        margin-top: 7vh;
+        text-align: center;
+        height: 27vh;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .follow>strong{
+        font-family:inter, sans-serif ;
+        font-size: 24px;
+        text-align: center;
+        width: 85vw;
+        /* margin-bottom: 3vh; */
+    }
+    
+    .last>p{
+        font-family:inter, sans-serif ;
+        font-size: 12px;
+    }
+    
+    .social{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 85vw ;
+    
+    }
+    
+    .social>button{
+        border: none;
+        background-color: #ebeadf;
+    }
+    
+}
